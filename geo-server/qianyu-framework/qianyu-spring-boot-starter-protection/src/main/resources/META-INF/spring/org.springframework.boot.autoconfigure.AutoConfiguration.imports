@@ -1,0 +1,4 @@
+com.qianyu.framework.idempotent.config.YudaoIdempotentConfiguration
+com.qianyu.framework.lock4j.config.YudaoLock4jConfiguration
+com.qianyu.framework.ratelimiter.config.YudaoRateLimiterConfiguration
+com.qianyu.framework.signature.config.YudaoApiSignatureAutoConfiguration

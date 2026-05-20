@@ -1,0 +1,3 @@
+com.qianyu.framework.datasource.config.YudaoDataSourceAutoConfiguration
+com.qianyu.framework.mybatis.config.YudaoMybatisAutoConfiguration
+com.qianyu.framework.translate.config.YudaoTranslateAutoConfiguration

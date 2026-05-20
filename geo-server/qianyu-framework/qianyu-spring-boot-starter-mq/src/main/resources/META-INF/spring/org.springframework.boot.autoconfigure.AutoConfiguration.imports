@@ -1,0 +1,3 @@
+com.qianyu.framework.mq.redis.config.YudaoRedisMQProducerAutoConfiguration
+com.qianyu.framework.mq.redis.config.YudaoRedisMQConsumerAutoConfiguration
+com.qianyu.framework.mq.rabbitmq.config.YudaoRabbitMQAutoConfiguration

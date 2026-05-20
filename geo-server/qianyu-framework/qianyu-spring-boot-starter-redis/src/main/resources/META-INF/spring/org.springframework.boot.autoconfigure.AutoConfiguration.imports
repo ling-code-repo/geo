@@ -1,0 +1,2 @@
+com.qianyu.framework.redis.config.YudaoRedisAutoConfiguration
+com.qianyu.framework.redis.config.YudaoCacheAutoConfiguration

@@ -1,0 +1,6 @@
+com.qianyu.framework.apilog.config.YudaoApiLogAutoConfiguration
+com.qianyu.framework.jackson.config.YudaoJacksonAutoConfiguration
+com.qianyu.framework.swagger.config.YudaoSwaggerAutoConfiguration
+com.qianyu.framework.web.config.YudaoWebAutoConfiguration
+com.qianyu.framework.xss.config.YudaoXssAutoConfiguration
+com.qianyu.framework.encrypt.config.YudaoApiEncryptAutoConfiguration

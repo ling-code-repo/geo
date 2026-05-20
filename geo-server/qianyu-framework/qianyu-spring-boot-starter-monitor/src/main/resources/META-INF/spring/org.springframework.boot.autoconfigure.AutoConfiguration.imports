@@ -1,0 +1,2 @@
+com.qianyu.framework.tracer.config.YudaoTracerAutoConfiguration
+com.qianyu.framework.tracer.config.YudaoMetricsAutoConfiguration

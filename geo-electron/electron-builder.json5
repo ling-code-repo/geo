@@ -1,0 +1,52 @@
+// @see https://www.electron.build/configuration/configuration
+{
+  $schema: "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
+  appId: "com.geo.electron",
+  productName: "geo",
+  copyright: "Copyright © 2025-present, geo-admin",
+  publish: {
+    provider: "github",
+    releaseType: "release"
+  },
+  directories: {
+    buildResources: "dist",
+    output: "release/${version}"
+  },
+  files: ["dist-electron/**", "dist/**"],
+
+  "extraResources": [
+    {
+      "from": "internal",
+      "to": "internal",
+      "filter": ["**/*"]
+    }
+  ],
+  nsis: {
+    allowToChangeInstallationDirectory: true,
+    createDesktopShortcut: true,
+    createStartMenuShortcut: true,
+    shortcutName: "geo-admin",
+    perMachine: true,
+    oneClick: false
+  },
+  mac: {
+    icon: "dist/icons/mac/icon.icns",
+    artifactName: "${productName}_${version}.${ext}",
+    target: ["dmg"]
+  },
+  win: {
+    icon: "dist/icons/win/icon.ico",
+    artifactName: "${productName}_${version}.${ext}",
+    target: [
+      {
+        target: "nsis",
+        arch: ["x64"]
+      }
+    ]
+  },
+  linux: {
+    icon: "dist/icons/png",
+    artifactName: "${productName}_${version}.${ext}",
+    target: ["deb", "AppImage"]
+  }
+}
